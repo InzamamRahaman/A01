@@ -1,11 +1,11 @@
 /*global define */
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
 /*global $:false, jQuery:false, _:false
-*/
+ */
 
-$(function () {
+$(function() {
     'use strict';
-    $('#container').highcharts({
+    $('#chartContainer').highcharts({
         title: {
             text: 'Firearm-Related Offences Per 100,000 Population, Selected Caribbean Countries, 1990-2010',
             x: -20 //center
@@ -16,7 +16,8 @@ $(function () {
         },
         xAxis: {
             categories: ['1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001',
-                '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010']
+                '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010'
+            ]
         },
         yAxis: {
             title: {

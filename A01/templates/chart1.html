@@ -2,31 +2,46 @@
 
 <html>
 
-    <head>
-        <title>UNDP</title>
-        <link rel="stylesheet" href="styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="styles/bootflat.min.css" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    </head>
+<head>
+    <title>UNDP</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/bootflat.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery 2.1.1 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="../templates/scripts/charts.js"></script>
+
+    <!-- Highcharts -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+</head>
 
 
-    
+
 <body>
 
     <!-- navigation bar comes here-->
     <div class="navbar-collapse collapse navbar-right">
         <div class="navbar-header">
             <div class="navbar-left">
-                <img  src="images/logo-undp.png" id="site-brand" class="navbar-brand" />
+                <img src="images/logo-undp.png" id="site-brand" class="navbar-brand" />
             </div>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active nav-link"><a href="#">HOME</a></li>
-            <li class="nav-link"><a href="#">CHART 1</a></li>
-            <li class="nav-link"><a href="#">CHART 2</a></li>
-            <li class="nav-link"><a href="#">TABLE</a></li>
-            <li class="nav-link"><a href="#">ABOUT US</a></li>
+            <li class="active nav-link"><a href="#">HOME</a>
+            </li>
+            <li class="nav-link"><a href="#">CHART 1</a>
+            </li>
+            <li class="nav-link"><a href="#">CHART 2</a>
+            </li>
+            <li class="nav-link"><a href="#">TABLE</a>
+            </li>
+            <li class="nav-link"><a href="#">ABOUT US</a>
+            </li>
             <!--
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -47,7 +62,7 @@
                 <li><a href="../navbar-fixed-top/">Fixed top</a></li>
             </ul>
                      -->
-            </ul>
+        </ul>
     </div>
 
     <!-- Navbar ends here -->
@@ -65,10 +80,30 @@
             <div class="col-lg-3 col-md-3 col-sm-2">
 
             </div>
-            
+
         </div>
     </div>
-    <!-- bdoy ends here-->
+    <!-- body ends here-->
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6  col-md-offset-4">
+                <!-- Interactive Chart -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">Line Chart</div>
+                    <div class="panel-body">
+                        <div class="chart" id="chartContainer" style="height: 300px;"></div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.col (RIGHT) -->
+    </section>
+    <!-- /.content -->
+
 
 </body>
+
 </html>
