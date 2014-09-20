@@ -17,6 +17,8 @@
     <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
     <Name>A01</Name>
     <RootNamespace>A01</RootNamespace>
+    <InterpreterId>{9def18d2-29b8-4ca7-aec8-99669254c685}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,6 +38,9 @@
     <Folder Include="static\fonts\" />
     <Folder Include="static\scripts\" />
     <Folder Include="templates\" />
+    <Folder Include="templates\images\" />
+    <Folder Include="templates\scripts\" />
+    <Folder Include="templates\styles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
@@ -65,6 +70,26 @@
     <Content Include="templates\contact.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\layout.html" />
+    <Content Include="templates\scripts\bootstrap.min.js" />
+    <Content Include="templates\scripts\icheck.min.js" />
+    <Content Include="templates\scripts\jquery.fs.selecter.min.js" />
+    <Content Include="templates\scripts\jquery.fs.stepper.min.js" />
+    <Content Include="templates\styles\bootflat.min.css" />
+    <Content Include="templates\styles\bootstrap-theme.min.css" />
+    <Content Include="templates\styles\bootstrap.min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{9def18d2-29b8-4ca7-aec8-99669254c685}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
