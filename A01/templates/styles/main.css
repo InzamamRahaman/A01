@@ -35,6 +35,7 @@ p {
     color: #6C7A89;
     font-family: 'Roboto', sans-serif;
     line-height: 200%;
+    margin: 5px;
 }
 
 #active-option {
@@ -50,6 +51,17 @@ footer p {
 }
 
 
+header {
+    background: #F5F7FA;
+}
+
+.panel-heading {
+    border-color:#757D75;
+}
+
+.panel-heading-text {
+    text-align: center;
+}
 
 .social:hover {
     			-webkit-transform:scale(1.1); 
