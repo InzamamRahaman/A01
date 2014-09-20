@@ -1,11 +1,105 @@
 /*global define */
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
-/*global $:false, jQuery:false, _:false
-*/
+/*global $:false, jQuery:false, _:false, Highcharts: true
+ */
+
+(function () {
+    'use strict';
+    var data = [{
+        "name": "Antigua and Barbuda",
+        "rate": 11.2
+    }, {
+        "name": "Barbados",
+        "rate": 10.8
+    }, {
+        "name": "Guyana",
+        "rate": 7.8
+    }, {
+        "name": "Jamaica",
+        "rate": 5.6
+    }, {
+        "name": "St Lucia",
+        "rate": 10.9
+    }, {
+        "name": "Suriname",
+        "rate": 9.7
+    }, {
+        "name": "Trinidad and Tobago",
+        "rate": 10.2
+    }];
+
+    var names = _.map(data, 'name'),
+        points = _.map(data, 'rate');
+    console.log(names);
+    console.log(points);
+
+    $('#chartContainer2').highcharts({
+        chart: {
+            type: 'bar'
+        },
+
+        title: {
+            text: null
+        },
+
+        subtitle: {
+            text: 'Source: UNDP Caribbean Report 2012'
+        },
+
+        xAxis: {
+            categories: names,
+            title: {
+                text: 'Countries'
+            }
+        },
+
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Percentage',
+                align: 'high'
+            },
+
+            labels: {
+                overflow: 'justify'
+            }
+        },
+
+        tooltip: {
+            valueSuffix: ' %'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'top',
+
+            floating: true,
+            borderWidth: 1,
+            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+            shadow: true
+        },
+        credits: {
+            enabled: false
+        },
+
+        series: [{
+            name: '',
+            data: points
+        }]
+    });
+}());
 
 $(function () {
     'use strict';
-    $('#container').highcharts({
+    $('#chartContainer1').highcharts({
         title: {
             text: 'Firearm-Related Offences Per 100,000 Population, Selected Caribbean Countries, 1990-2010',
             x: -20 //center
@@ -16,7 +110,8 @@ $(function () {
         },
         xAxis: {
             categories: ['1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001',
-                '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010']
+                '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010'
+                ]
         },
         yAxis: {
             title: {
