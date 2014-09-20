@@ -3,10 +3,80 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 body {
     background-color: #ECF0F1;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0px;
+    }
+
+    main {
+        padding: 0px;
+    }
+}
+
+#main {
+    padding: 40px;
 }
 
 #site-brand {
 
 }
+
+p {
+    color: #6C7A89;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
+}
+
+#active-option {
+    text-decoration: dotted
+}
+
+footer {
+    background-color: #95A5A6;
+}
+
+footer p {
+    color: #ECECEC;
+}
+
+
+
+.social:hover {
+    			-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+			}
+			#social {
+				-webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+			}           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+			.social-fb:hover {
+				color: #3B5998;
+			}
+			.social-tw:hover {
+				color: #4099FF;
+			}
+			.social-gp:hover {
+				color: #d34836;
+			}
+			.social-em:hover {
+				color: #f39c12;
+			}
