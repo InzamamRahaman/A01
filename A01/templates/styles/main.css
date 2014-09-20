@@ -6,6 +6,33 @@
 .nav-link:hover {
     text-decoration: underline;
 }
+/*edits (steffan)
+#nav-collapse-menu a{
+    color:rgb(223, 219, 219);
+}
+
+#navbar{
+    background: #434A54;
+}
+*/
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+
+#nav-collapse-menu  li:hover{
+    color:white;
+}
+.navbar-custom {
+    position:fixed;
+    top:0;
+    left:0;
+    border:none;
+    border-radius:0;
+    background-color:rgba(67,74,84,.7);
+    width:100%;
+    z-index:2000;
+}
 
 body {
     background-color: #ECF0F1;
