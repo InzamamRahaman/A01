@@ -19,7 +19,6 @@
     margin: 0 auto;
 }
 
-
 #nav-collapse-menu  li:hover{
     color:white;
 }
@@ -32,6 +31,29 @@
     background-color:rgba(67,74,84,.7);
     width:100%;
     z-index:2000;
+}
+
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://link-to-your/image.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+} 
+
+
+
+.text-content{
+	margin:50px;
+	height:200px;
+	background-color:#E6E9ED;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 body {
