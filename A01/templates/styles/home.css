@@ -86,33 +86,34 @@
 /*VERTICAL NAVIGATION*/
 #cd-vertical-nav {
     /*fix the navigation*/
+	text-decoration:none;
       position: fixed;
       right: 40px;
-      top: 50%;
-      bottom: auto;
-      transform: translateY(-50%);
+      top: 65%;
+	  color:#6C7A89;
+	
+}
+#cd-vertical-nav ul li a{
+	text-decoration:none;
+	color:#6C7A89;
+}
+ #cd-vertical-nav ul li{
+	list-style-type:none;
+	-webkit-transform: scale(0.8);
+ }
+ 
+ #cd-vertical-nav ul li:hover{
+	-webkit-transform: scale(2.0);
+ }
+ 
+ 
+#cd-vertical-nav ul li span {
+      transform: scale(3);
 }
  
-#cd-vertical-nav a span {
-      float: right;
-      /*scale down navigation dots and labels*/
-      -webkit-transform: scale(0.6);
-}
- 
-#cd-vertical-nav .cd-dot {
-      -webkit-transform-origin: 50% 50%;
-}
- 
-#cd-vertical-nav .cd-label {
-      -webkit-transform-origin: 100% 50%;
-}
  
 #vertical-nav a:hover span {
      /*scale up navigation dots and labels*/
       -webkit-transform: scale(2);
 }
  
-#cd-vertical-nav a:hover .cd-label {
-    /*show labels*/
-     opacity: 1;
-}
