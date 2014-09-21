@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <script>
+    function loadXMLDoc(page)
+    {
+//    var xmlhttp;
+//    if (window.XMLHttpRequest)
+//      {// code for IE7+, Firefox, Chrome, Opera, Safari
+//      xmlhttp=new XMLHttpRequest();
+//      }
+//    else
+//      {// code for IE6, IE5
+//      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+//      }
+    //xmlhttp.onreadystatechange=function()
+    //  {
+    //  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    //    {
+    //    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    //    }
+    //  }
+
+    //if(!xmlHttp)return;
+    //xmlhttp = $("myDiv").load( "chart2.html" );
+    ////xmlhttp.open("GET","chart2.html",true);
+    ////xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    //xmlhttp.send();
+
+    //var event = window.event;
+    if(!page) return;    
+
+    try{    
+    $( "#pageBody" ).load(page, function() {
+      console.log( "Load was performed." );
+    });}catch(e){
+        console.log('error');
+    }
+
+
+//    event.returnValue = false;
+//    if ( event.preventDefault ){ event.preventDefault(); }
+//    return false;    
+//        
+//        
+    
+
+    }
+    </script>
+
+    <title>UNDP</title>
+            <link rel="stylesheet" href="styles/bootstrap.min.css" />
+            <link rel="stylesheet" href="styles/bootflat.min.css" />
+            <link rel="stylesheet" href="styles/main.css" />
+            <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="styles/table.css" />  
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/jquery.fs.selecter.min.js"></script>
+        <script src="scripts/jquery.fs.stepper.min.js"></script>
+        <script src="scripts/icheck.min.js"></script>
+    </head>
+    <body>
+    
+    <a href="#" onclick="loadXMLDoc('chart2.html')">Request data</a>
+    <a href="#" onclick="loadXMLDoc('chart1.html')">Request data</a>
+    <div id="pageBody">
+        
+    </div>
+
+    </body>
+    </html>
+
+
+            <title>UNDP</title>
+            <link rel="stylesheet" href="styles/bootstrap.min.css" />
+            <link rel="stylesheet" href="styles/bootflat.min.css" />
+            <link rel="stylesheet" href="styles/main.css" />
+            <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="styles/table.css" />
