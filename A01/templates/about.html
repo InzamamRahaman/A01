@@ -1,10 +1,161 @@
-{% extends "layout.html" %}
+<!doctype>
 
-{% block content %}
+<html>
 
-<h2>{{ title }}.</h2>
-<h3>{{ message }}</h3>
+<head>
+    <title>UNDP</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/bootflat.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
 
-<p>Use this area to provide additional information.</p>
 
-{% endblock %}
+
+<body>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.fs.selecter.min.js"></script>
+    <script src="scripts/jquery.fs.stepper.min.js"></script>
+    <script src="scripts/icheck.min.js"></script>
+    <!-- navigation bar comes here-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <nav class="navbar-collapse collapse navbar-right">
+                        <div class="navbar-header">
+                            <div class="navbar-left">
+                                <img src="images/logo-undp.png" id="site-brand" class="navbar-brand" />
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active nav-link"><a href="#">HOME</a></li>
+                            <li class="nav-link"><a href="#">CHART 1</a></li>
+                            <li class="nav-link" id="active-option"><a href="#">CHART 2</a></li>
+                            <li class="nav-link"><a href="#">TABLE</a></li>
+                            <li class="nav-link"><a href="#">ABOUT US</a></li>
+                            <!--
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">Nav header</li>
+                                        <li><a href="#">Separated link</a></li>
+                                        <li><a href="#">One more separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active"><a href="./">Default</a></li>
+                                <li><a href="../navbar-static-top/">Static top</a></li>
+                                <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+                            </ul>
+                                     -->
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar ends here -->
+    <!-- body comes here-->
+    <div class="container" id="main">
+        <div class="row">
+
+           <div class="col-lg-1 col-md-1 col-sm-1">
+
+           </div>
+
+            <!-- Place html code for timeline here-->
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                <div class="timeline">
+                    <dl>
+                        <dt>Apr 2014</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Apr 14</div>
+                            <div class="events">
+                                <div class="events-body">
+                                    <h4 class="events-heading">Neque porro</h4>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                    </p>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Apr 10</div>
+                            <div class="events">
+
+                                <div class="events-body">
+                                    <h4 class="events-heading">At vero eos et accusamus</h4>
+                                    <p>
+                                        Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    </p>
+                                </div>
+                            </div>
+                        </dd>
+                        <dt>Mar 2014</dt>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">Mar 15</div>
+                            <div class="events">
+                                
+                                <div class="events-body">
+                                    <h4 class="events-heading">Lorum Ipsum</h4>
+                                    <p>
+                                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+                                    </p>
+                                </div>
+                            </div>
+                        </dd>
+                        
+
+                    </dl>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-sm-1">
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="text-center center-block">
+                    <br />
+                    <a href="https://www.facebook.com/bootsnipp"><i class="social fa fa-facebook-square fa-3x"></i></a>
+                    <a href="https://twitter.com/bootsnipp"><i class=" social fa fa-twitter-square fa-3x"></i></a>
+                    <a href="https://plus.google.com/+Bootsnipp-page"><i class=" social fa fa-google-plus-square fa-3x"></i></a>
+                    <a href="mailto:bootsnipp@gmail.com"><i id="social" class=" social fa fa-envelope-square fa-3x"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+
+            </div>
+        </div>
+    </footer>
+    <!-- bdoy ends here-->
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/highstock.js"></script>
+    <script src="scripts/lodash.js"></script>
+    <script src="scripts/charts.js"></script>
+</body>
+</html>
