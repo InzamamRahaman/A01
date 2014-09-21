@@ -69,6 +69,10 @@ p {
     text-decoration: dotted
 }
 
+.inline{
+    display: inline;
+}
+
 footer {
     background-color: #95A5A6;
 }
