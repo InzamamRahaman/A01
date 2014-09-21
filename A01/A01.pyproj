@@ -67,16 +67,24 @@
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
     <Content Include="templates\about.html" />
+    <Content Include="templates\chart2.html" />
     <Content Include="templates\contact.html" />
+    <Content Include="templates\images\logo-undp.png" />
     <Content Include="templates\index.html" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\scripts\bootstrap.min.js" />
+    <Content Include="templates\scripts\chart2.js" />
+    <Content Include="templates\scripts\highstock.js" />
     <Content Include="templates\scripts\icheck.min.js" />
+    <Content Include="templates\scripts\jquery.js" />
     <Content Include="templates\scripts\jquery.fs.selecter.min.js" />
     <Content Include="templates\scripts\jquery.fs.stepper.min.js" />
+    <Content Include="templates\scripts\lodash.js" />
+    <Content Include="templates\scripts\selfReports.json" />
     <Content Include="templates\styles\bootflat.min.css" />
     <Content Include="templates\styles\bootstrap-theme.min.css" />
     <Content Include="templates\styles\bootstrap.min.css" />
+    <Content Include="templates\styles\main.css" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
