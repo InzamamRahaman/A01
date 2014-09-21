@@ -20,6 +20,8 @@
     <script src="scripts/jquery.fs.selecter.min.js"></script>
     <script src="scripts/jquery.fs.stepper.min.js"></script>
     <script src="scripts/icheck.min.js"></script>
+    <script src="scripts/bootstrapValidator.js"></script>
+    <script src="scripts/contactUs.js"></script>
     <!-- NAVIGATION bar comes here-->
     <nav class="navbar navbar-fixed-top navbar-default navbar-custom" role="navigation" id="navbar">
         <div class="container-fluid">
@@ -70,26 +72,26 @@
                         <h5 class="panel-heading-text">Contact Us</h5>
                     </div>
                     <div class="panel-body">
-                        <form>
+                        <form class="form-horizontal" role="form">
                             <!-- Text input-->
                             <div class="control-group">
-                                <label class="control-label inline" for="email">Email:</label>
-                                <div class="controls inline">
-                                    <input id="email" name="email" type="text" placeholder="example@example.com" class="input-large contact">
+                                <label class="control-label " for="email">Email:</label>
+                                <div class="input-group" data-validate="email">
+                                    <input class="form-control" name="email" type="email" placeholder="example@example.com" data-bv-emailaddress-message="The value is not a valid email address" />
                                 </div>
                             </div>
 
                             <div class="control-group">
                                 <label class="control-label" for="comments">Comments:</label>
                                 </br>
-                                <textarea id="comments" class="controls contact" rows="12" cols="75"></textarea>
+                                <textarea id="comments" class="form-control contact" rows="12" cols="75"></textarea>
                             </div>
 
                             <!-- Button -->
                             <div class="control-group">
                                 <label class="control-label" for="submit"></label>
-                                <div class="controls">
-                                    <button id="submit" name="submit" class="btn btn-default">Submit</button>
+                                <div>
+                                    <button id="submit" name="submit" class="btn btn-defaultl">Submit</button>
                                 </div>
                             </div>
                         </form>
