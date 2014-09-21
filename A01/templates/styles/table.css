@@ -1,0 +1,22 @@
+.blue-head{
+    background-color:#22A7F0;  
+    color:#FFF;
+}
+
+.table-sub{
+    background-color:#5D8CAE;
+    color:#FFF;
+    text-align:center;
+}
+
+
+.cap{
+    color:#22A7F0;    
+}
+
+.table-edge{
+    border: 1px solid #5D8CAE;
+    padding: 10px 40px; 
+    border-radius: 5px;
+    display: block;   
+}
