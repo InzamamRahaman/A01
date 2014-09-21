@@ -80,9 +80,11 @@
 	margin:50px;
 	background-color:#F5F7FA;
 }
+
+
+
 /*VERTICAL NAVIGATION*/
-
-.no-touch #cd-vertical-nav {
+#cd-vertical-nav {
     /*fix the navigation*/
       position: fixed;
       right: 40px;
@@ -91,60 +93,26 @@
       transform: translateY(-50%);
 }
  
-.no-touch #cd-vertical-nav a span {
+#cd-vertical-nav a span {
       float: right;
       /*scale down navigation dots and labels*/
-      transform: scale(0.6);
+      -webkit-transform: scale(0.6);
 }
  
-.no-touch #cd-vertical-nav .cd-dot {
-      transform-origin: 50% 50%;
+#cd-vertical-nav .cd-dot {
+      -webkit-transform-origin: 50% 50%;
 }
  
-.no-touch #cd-vertical-nav .cd-label {
-      transform-origin: 100% 50%;
+#cd-vertical-nav .cd-label {
+      -webkit-transform-origin: 100% 50%;
 }
  
-.no-touch #vertical-nav a:hover span {
+#vertical-nav a:hover span {
      /*scale up navigation dots and labels*/
-      transform: scale(1);
+      -webkit-transform: scale(2);
 }
  
-.no-touch #cd-vertical-nav a:hover .cd-label {
+#cd-vertical-nav a:hover .cd-label {
     /*show labels*/
      opacity: 1;
 }
-
-.no-touch #cd-vertical-nav {
-    /*fix the navigation*/
-      position: fixed;
-      right: 40px;
-      top: 50%;
-      bottom: auto;
-      transform: translateY(-50%);
-}
- 
-.no-touch #cd-vertical-nav a span {
-      float: right;
-      /*scale down navigation dots and labels*/
-      transform: scale(0.6);
-}
- 
-.no-touch #cd-vertical-nav .cd-dot {
-      transform-origin: 50% 50%;
-}
- 
-.no-touch #cd-vertical-nav .cd-label {
-      transform-origin: 100% 50%;
-}
- 
-.no-touch #vertical-nav a:hover span {
-     /*scale up navigation dots and labels*/
-      transform: scale(1);
-}
- 
-.no-touch #cd-vertical-nav a:hover .cd-label {
-    /*show labels*/
-     opacity: 1;
-}
-
