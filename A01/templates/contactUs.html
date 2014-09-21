@@ -74,8 +74,9 @@
                             <!-- Text input-->
                             <div class="control-group">
                                 <label class="control-label inline" for="email">Email:</label>
-                                <div class="controls inline">
-                                    <input id="email" name="email" type="text" placeholder="example@example.com" class="input-large contact">
+                                <div class="input-group" data-validate="email">
+                                    <input type="text" class="form-control" name="validate-email" id="validate-email" placeholder="example@example.com" required>
+                                    <span class="input-group-addon danger"><span class="glyphicon glyphicon-remove"></span></span>
                                 </div>
                             </div>
 
