@@ -113,6 +113,12 @@
 	<nav id="cd-vertical-nav" >
 		<ul>
 			<li>
+				<a href="#siginForm" data-number="0">
+					<span class="cd-dot">*</span>
+					<span class="cd-label">Sign In</span>
+				</a>
+			</li>
+			<li>
 				<a href="#section1" data-number="1">
 					<span class="cd-dot">*</span>
 					<span class="cd-label">Main heading</span>
@@ -176,6 +182,47 @@
             <div class="col-sm-4 col-xs-12 circular3"></div>
         </div>
     </div>
+	
+	
+	<div class="row" id="siginForm">
+		<div class="col-md-10 col-md-offset-1">
+		
+		<form class="form-horizontal">
+			<fieldset>
+
+			<!-- Form Name -->
+			<legend>Join our cause</legend>
+
+			<!-- Text input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="textinput">Username</label>  
+			  <div class="col-md-4">
+			  <input id="textinput" name="textinput" type="text" placeholder="Enter username" class="form-control input-md">
+			  <span class="help-block">help</span>  
+			  </div>
+			</div>
+
+			<!-- Password input-->
+			<div class="form-group">
+			  <label class="col-md-4 control-label" for="passwordinput">Password Input</label>
+			  <div class="col-md-4">
+				<input id="passwordinput" name="passwordinput" type="password" placeholder="Enter password" class="form-control input-md">
+				<span class="help-block">help</span>
+			  </div>
+			</div>
+
+			<!-- Button -->
+			<div class="form-group">
+			
+			  <div class="col-md-4">
+				<button id="singlebutton" name="singlebutton" class="col-md-offset-12 btn btn-primary">Done</button>
+			  </div>
+			</div>
+
+			</fieldset>
+		</form>
+		</div>
+	</div>
     <!-- bdoy ends here-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts\bootstrap.min.js"></script>
