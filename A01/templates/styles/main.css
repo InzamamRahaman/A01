@@ -1,5 +1,4 @@
-﻿
-.nav-link {
+﻿.nav-link {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -93,6 +92,14 @@ p {
 
 .inline{
     display: inline;
+}
+
+form{
+    width: 100%;
+}
+
+.contact{
+    width: 50%;
 }
 
 footer {
