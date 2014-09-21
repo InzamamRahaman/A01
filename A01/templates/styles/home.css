@@ -33,7 +33,7 @@
     z-index:2000;
 }
 
-.circular {
+.circular1 {
 	width: 300px;
 	height: 300px;
 	border-radius: 150px;
@@ -43,7 +43,29 @@
 	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-} 
+}
+.circular2 {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(styleimages/img_no_help.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}  
+.circular3 {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(styleimages/img_cyber.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}  
 .main-content-bars{
 	margin-top:50px;
 }
@@ -53,5 +75,8 @@
 	margin:50px;
 	height:200px;
 	background-color:#F5F7FA;
-	
+}
+.text-main-desc{
+	margin:50px;
+	background-color:#F5F7FA;
 }
