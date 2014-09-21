@@ -95,6 +95,14 @@ p {
     display: inline;
 }
 
+form{
+    width: 100%;
+}
+
+.contact{
+    width: 50%;
+}
+
 footer {
     background-color: #95A5A6;
 }
