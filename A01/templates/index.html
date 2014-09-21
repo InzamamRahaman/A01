@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/home.css" />
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	function test(){
+		var xmlhttp;
+		if(window.XMLHttpRequest){
+			xmlhttp= new XMLHttpRequest();
+		}else{
+			xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function(){
+			if(xmlhttp.readyState==4){
+				document.getElementById('ajaxText').innerHTML = xmlhttp.responseText;
+			}
+		}
+		xmlhttp.open("GET","undp.txt",true);
+		xmlhttp.send();
+	}
+	</script>
 </head>
 
 
@@ -31,7 +49,7 @@
                 </button>
                 <!--<a class="navbar-brand" href="#">Our site Name :v</a>-->
             </div>
-            <div class="navbar-collapse collapse navbar-right" id="nav-collapse-menu">
+            <div class="navbar-collapse collapse " id="nav-collapse-menu">
                 <div class="navbar-header">
                     <div class="navbar-left">
                         <img src="images/logo-undp.png" id="site-brand" class="navbar-brand" />
@@ -153,8 +171,7 @@
         <div class="row main-content-bars text-main-desc">
             <div class="col-sm-10 col-sm-offset-1">
                 <h1>Why we need to change the way we think</h1>
-                <p>Master cleanse literally ennui raw denim Wes Anderson leggings mlkshk, narwhal Pitchfork. Squid wolf Helvetica ugh craft beer. Umami street art pickled tofu Tonx. Hashtag yr roof party keytar cardigan fashion axe. Neutra viral jean shorts forage organic. Ethical gentrify +1 mustache Truffaut raw denim pickled. Direct trade sustainable fingerstache, leggings Odd Future jean shorts Thundercats cray Godard pickled deep v twee Austin. Authentic cray next level, pickled aesthetic ennui literally. Wolf swag slow-carb keytar High Life Intelligentsia. Blue Bottle paleo Neutra PBR&B swag, gluten-free Kickstarter Echo Park. Gastropub tousled yr meh, Helvetica church-key keytar. Literally sustainable locavore chia. Mixtape Echo Park semiotics cray +1 Helvetica locavore brunch, Godard crucifix chillwave vegan. Flexitarian PBR YOLO gentrify small batch typewriter.
-                </p>
+                <p id="ajaxText"> Master cleanse literally ennui raw denim Wes Anderson leggings mlkshk, narwhal Pitchfork. Squid wolf Helvetica ugh craft beer. Umami street art pickled tofu Tonx. Hashtag yr roof party keytar cardigan fashion axe. </p>
             </div>
         </div>
     </div>
@@ -238,7 +255,7 @@
 			<div class="form-group">
 			
 			  <div class="col-md-4">
-				<button id="singlebutton" name="singlebutton" class="col-md-offset-12 btn btn-primary">Done</button>
+				<button id="singlebutton" name="singlebutton" class="col-md-offset-12 btn btn-primary" onclick="test()">Done</button>
 			  </div>
 			</div>
 
@@ -247,8 +264,10 @@
 		</div>
 	</div>
     <!-- bdoy ends here-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
     <script type="text/javascript" src="scripts\bootstrap.min.js"></script>
+	
+	
 
 </body>
 
