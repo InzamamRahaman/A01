@@ -16,7 +16,6 @@
 
 .table-edge{
     border: 1px solid #5D8CAE;
-    padding: 10px 40px; 
-    border-radius: 5px;
+    border-radius: 8px;
     display: block;   
 }
